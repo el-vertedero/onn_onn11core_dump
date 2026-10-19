@@ -1,0 +1,24 @@
+#  start
+####################################
+# from generate-common-build-props
+# import tinno prop.
+import /odm/etc/${ro.boot.sku:-US}.prop
+####################################
+####################################
+# from variable PRODUCT_ODM_PROPERTIES
+####################################
+# end of file
+#  end
+#  start
+####################################
+# from generate-common-build-props
+# import tinno prop.
+import /odm/etc/${ro.boot.sku:-US}.prop
+####################################
+####################################
+# from variable PRODUCT_ODM_PROPERTIES
+####################################
+# end of file
+#  end
+
+

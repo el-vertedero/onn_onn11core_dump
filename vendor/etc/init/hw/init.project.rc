@@ -1,0 +1,131 @@
+import /vendor/etc/init/hw/init.mtkgki.rc
+
+# MTK project .rc configure
+
+on init
+    mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
+    mkdir /storage/usbotg 0700 root root
+
+on post-fs-data
+
+#Camera
+    chmod 0660 /dev/MAINAF
+    chown system camera /dev/MAINAF
+
+    chmod 0660 /dev/MAINAF2
+    chown system camera /dev/MAINAF2
+
+    chmod 0660 /dev/SUBAF
+    chown system camera /dev/SUBAF
+
+    chmod 0660 /dev/GAF001AF
+    chown system camera /dev/GAF001AF
+
+    chmod 0660 /dev/DW9714AF
+    chown system camera /dev/DW9714AF
+
+    chmod 0660 /dev/LC898212AF
+    chown system camera /dev/LC898212AF
+
+    chmod 0660 /dev/BU64745GWZAF
+    chown system camera /dev/BU64745GWZAF
+
+#SMB
+    chown system system /proc/smb/ScreenComm
+    chmod 0660 /proc/smb/ScreenComm
+
+    chmod 0660 /dev/spm
+    chown system system /dev/spm
+# TINNO add for TEAFA-1241 double tap by jhyu begin
+    chmod 0666 /sys/devices/platform/soc/11012000.spi2/spi_master/spi2/spi2.0/fts_gesture_mode
+# TINNO add for TEAFA-1241 double tap by jhyu end
+# TINNO add for TEAFA-3075 by xin.bai begin
+    chown system system /sys/devices/platform/soc/11012000.spi2/spi_master/spi2/spi2.0/fts_edgepalm_mode
+# TINNO add for TEAFA-3075 by xin.bai end
+# TINNO add for TEAFA-3075 double tap by jhyu begin
+    chmod 0666 /sys/devices/platform/soc/11012000.spi2/spi_master/spi2/spi2.0/fts_edgepalm_mode
+# TINNO add for TEAFA-3075 double tap by jhyu end
+# DTS_AUDIO START
+    mkdir /data/vendor/audio 0770 audio audio
+    mkdir /data/vendor/audio/dts 0771 media audio
+
+    setprop ro.vendor.dts.licensepath "/vendor/etc/dts/"
+    setprop ro.vendor.dts.cfgpath "/vendor/etc/dts/"
+# DTS_AUDIO END
+# TINNO:modify by junbo.cui for TEAFA-977 2025-09-16 start
+on property:persist.sys.optimized.charging.enable=1
+   write /sys/devices/platform/charger/reduce_aging_enable 1
+on property:persist.sys.optimized.charging.enable=0
+   write /sys/devices/platform/charger/reduce_aging_enable 0
+   setprop persist.sys.charge.now.enable 0
+
+on property:persist.sys.overcharge.protect.enable=1
+   write /sys/devices/platform/charger/overcharge_protect_enable 1
+on property:persist.sys.overcharge.protect.enable=0
+   write /sys/devices/platform/charger/overcharge_protect_enable 0
+   setprop persist.sys.charge.now.enable 0
+   
+on property:persist.sys.charge.now.enable=1
+   write /sys/devices/platform/charger/charge_now_enable 1
+on property:persist.sys.charge.now.enable=0
+   write /sys/devices/platform/charger/charge_now_enable 0
+# TINNO:modify by junbo.cui for TEAFA-977 2025-09-16 end
+
+on init
+    # Refer to http://source.android.com/devices/tech/storage/index.html
+    # It said, "Starting in Android 4.4, multiple external storage devices are surfaced to developers through
+    #           Context.getExternalFilesDirs(), Context.getExternalCacheDirs(), and Context.getObbDirs().
+    #           External storage devices surfaced through these APIs must be a semi-permanent part of the device (such as an SD card slot in a battery compartment).
+    #           Developers expect data stored in these locations to be available over long periods of time."
+    # Therefore, if the target doesn't support sd hot-plugging (Ex: the SD card slot in a battery compartment), we need to export SECONDARY_STORAGE in 'boot' section
+    #
+    # export SECONDARY_STORAGE /storage/sdcard1
+
+# start mmstat
+on property:sys.boot_completed=1
+    mkdir /sys/kernel/tracing/instances/mmstat 711
+    write /sys/kernel/tracing/instances/mmstat/tracing_on 0
+    write /sys/kernel/tracing/instances/mmstat/buffer_size_kb 16
+    write /sys/kernel/tracing/instances/mmstat/events/mmstat/enable 1
+    write /sys/kernel/tracing/instances/mmstat/tracing_on 1
+
+on post-fs-data
+    wait /dev/block/by-name/carrier
+    chown system system /mnt/carrier
+    chmod 0771 /mnt/carrier
+    restorecon_recursive /mnt/carrier
+    wait /dev/block/by-name/tnpst
+    chown system system /mnt/tnpst
+    chmod 0771 /mnt/tnpst
+    restorecon_recursive /mnt/tnpst
+    wait /dev/block/by-name/poweron_info
+    chown system system /mnt/poweron_info
+    chmod 0771 /mnt/poweron_info
+    restorecon_recursive /mnt/poweron_info
+
+#haohao.zhang add for csr, sta
+service csr_create /vendor/bin/csr_create
+     class late_start
+     user root
+     group root
+     oneshot
+     disabled
+
+on property:vendor.createcsr.flag=true
+   start csr_create
+on property:vendor.createcsr.flag=false
+   stop csr_create
+#haohao.zhang add for csr, end
+
+
+service master_flag /vendor/bin/master_flag
+    class late_start
+    user system
+    group system
+    oneshot
+    disabled
+
+on boot 
+    start master_flag
+
+

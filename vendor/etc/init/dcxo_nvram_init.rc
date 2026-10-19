@@ -1,0 +1,10 @@
+# 26M Clock calibration
+service dcxosetcap /vendor/bin/dcxosetcap
+    class main
+    user root
+    group root
+    oneshot
+    disabled
+
+on property:vendor.service.nvram_init=Ready
+    start dcxosetcap

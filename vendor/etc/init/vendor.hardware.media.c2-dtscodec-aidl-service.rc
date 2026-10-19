@@ -1,0 +1,8 @@
+service vendor-hardware-media-c2-dtscodec-hal /vendor/bin/hw/vendor.hardware.media.c2-dtscodec-aidl-service
+    interface aidl android.hardware.media.c2.IComponentStore/default3
+    class hal
+    oneshot
+    disabled
+    user mediacodec
+    group mediadrm camera drmrpc system
+    ioprio rt 4

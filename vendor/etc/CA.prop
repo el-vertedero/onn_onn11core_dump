@@ -1,0 +1,24 @@
+####################################
+# from generate-common-build-props  onn11Core_CA
+# These properties identify this partition image.
+####################################
+ro.product.vendor.brand=onn
+ro.product.vendor.device=onn11Core
+ro.product.vendor.manufacturer=onn
+ro.product.vendor.model=36018341
+ro.product.vendor.name=onn11Core_CA
+ro.vendor.product.cpu.abilist=arm64-v8a
+ro.vendor.product.cpu.abilist32=
+ro.vendor.product.cpu.abilist64=arm64-v8a
+ro.vendor.build.date=Wed Aug 12 09:55:00 UTC 2026
+ro.vendor.build.date.utc=1786540660
+ro.vendor.build.fingerprint=onn/onn11Core_CA/onn11Core:16/BP2A.250605.031.A3/1786540660:user/release-keys
+ro.vendor.build.id=BP2A.250605.031.A3
+ro.vendor.build.tags=release-keys
+ro.vendor.build.type=user
+ro.vendor.build.version.incremental=1786540660
+ro.vendor.build.version.release=16
+ro.vendor.build.version.release_or_codename=16
+ro.vendor.build.version.sdk=36
+ro.vendor.build.version.sdk_full=36.0
+
