@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources>
+    <!-- Full test -->
+    <setting type="full_test" name="Version" value="1"/>
+    <setting type="full_test" name="OTG" value="1"/>
+    <setting type="full_test" name="Camera" value="1"/>
+    <setting type="full_test" name="Battery,LED" value="1"/>
+    <setting type="full_test" name="LCDColor,Keys" value="1"/>
+    <setting type="full_test" name="Speaker" value="1"/>
+    <setting type="full_test" name="LoopBack" value="1"/>
+    <setting type="full_test" name="StylusDraw" value="1"/>
+    <setting type="full_test" name="TouchPanel,LCDContrast" value="1"/>
+    <setting type="full_test" name="GSensor" value="1"/>
+    <setting type="full_test" name="LSensor" value="1"/>
+    <setting type="full_test" name="WiFi" value="1"/>
+    <setting type="full_test" name="Bluetooth" value="1"/>
+    <setting type="full_test" name="MemoryCard" value="1"/>
+
+    <!-- Item test -->
+    <setting type="item_test" name="Keys" value="1"/>
+    <setting type="item_test" name="Version" value="1"/>
+    <setting type="item_test" name="Speaker" value="1"/>
+    <setting type="item_test" name="StylusDraw" value="1"/>
+    <setting type="item_test" name="TouchPanel" value="1"/>
+    <setting type="item_test" name="LCDColor" value="1"/>
+    <setting type="item_test" name="LCDContrast" value="1"/>
+    <setting type="item_test" name="LED" value="1"/>
+    <setting type="item_test" name="Camera" value="1"/>
+    <setting type="item_test" name="LoopBack" value="1"/>
+    <setting type="item_test" name="Battery" value="1"/>
+    <setting type="item_test" name="OTG" value="1"/>
+    <setting type="item_test" name="GSensor" value="1"/>
+    <setting type="item_test" name="LSensor" value="1"/>	
+    <setting type="item_test" name="MemoryCard" value="1"/>
+    <setting type="item_test" name="WiFi" value="1"/>
+    <setting type="item_test" name="Bluetooth" value="1"/>
+
+
+    <!-- pat test =================================================================================================================-->
+    <setting type="pat_test" name="Version" value="1"/>
+    <setting type="pat_test" name="OTG" value="1"/>
+    <setting type="pat_test" name="Camera" value="1"/>
+    <setting type="pat_test" name="Battery,LED" value="1"/>
+    <setting type="pat_test" name="LCDColor,Keys" value="1"/>
+    <setting type="pat_test" name="Speaker" value="1"/>
+    <setting type="pat_test" name="LoopBack" value="1"/>
+    <setting type="pat_test" name="StylusDraw" value="1"/>
+    <setting type="pat_test" name="TouchPanel,LCDContrast" value="1"/>
+    <setting type="pat_test" name="GSensor" value="1"/>
+    <setting type="pat_test" name="LSensor" value="1"/>
+
+    <setting type="pat_test" name="WiFi" value="1"/>
+    <setting type="pat_test" name="Bluetooth" value="1"/>
+    <setting type="pat_test" name="MemoryCard" value="1"/>
+
+    <!-- lda test =================================================================================================================-->
+    <setting type="lda_test" name="LCDColor" value="1"/>
+    <setting type="lda_test" name="TouchPanel" value="1"/>
+
+    <setting type="whole_machine_test" name="LCDColor" value="1"/>
+    <setting type="whole_machine_test" name="CameraFront" value="1"/>
+    <setting type="whole_machine_test" name="MultiTouch,LCDContrast" value="1"/>
+    <setting type="whole_machine_test" name="GSensor" value="1"/>
+    <setting type="whole_machine_test" name="LSensor" value="1"/>
+
+</resources>

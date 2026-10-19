@@ -1,0 +1,29 @@
+ro.feature.engineermode.att=false
+ro.vendor.product.svn=00
+persist.sys.display_market_name=true
+persist.sys.market_name=onn 11 Core Tablet
+ro.custom.date.utc=1786540660
+ro.custom.build.version=TTA.44
+ro.internal.build.version=T405AV01.44.00_16.0_WAL_ALL_ALL_44user_01
+ro.product.operator=ALL
+ro.product.locale.region=ALL
+ro.tcustom.build.version=TTA.44
+ro.tinternal.build.version=T405AV01.44.00_16.0_WAL_ALL_ALL_44user_01
+
+ro.bootimage.build.date.utc=1786540660
+ro.bootimage.build.date=Wed Aug 12 21:17:40 CST 2026
+ro.mba.buildtime=v0.1-2026-08-12-21:23:44
+ro.vendor.custom.build.version=TTA.44
+
+ro.vendor.tcustom.build.version=TTA.44
+
+ro.vendor.internal.build.version=T405AV01.44.00_16.0_WAL_ALL_ALL_44user_01
+
+ro.vendor.tinternal.build.version=T405AV01.44.00_16.0_WAL_ALL_ALL_44user_01
+
+ro.build.custom_version=TTA.44
+
+ro.build.custom_int_version=T405AV01.44.00_16.0_WAL_ALL_ALL_44user_01
+
+ro.build.sw_version=TTA.44
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources>
+	<setting type="system" name="haptic_feedback_enabled" value="1" skuid="" minionly="false"/>
+	<setting type="system" name="lockscreen_sounds_enabled" value="1" skuid="" minionly="false"/>
+	<setting type="secure" name="charging_sounds_enabled" value="1" skuid="" minionly="false"/>
+	<setting type="system" name="dtmf_tone" value="1" skuid="" minionly="false"/>
+	<setting type="system" name="sound_effects_enabled" value="1" skuid="" minionly="false"/>
+	<setting type="system" name="vibrate_on" value="1" skuid="" minionly="false"/>
+	<setting type="secure" name="status_bar_show_vibrate_icon" value="1" skuid="" minionly="false"/>
+	<setting type="global" name="device_name" value="onn 11 Core Tablet" skuid="" minionly="false"/>
+	<setting type="system" name="status_bar_show_battery_percent" value="1" skuid="" minionly="false"/>
+	<setting type="system" name="screen_off_timeout" value="30000" skuid="" minionly="false"/>
+	<setting type="system" name="accelerometer_rotation" value="1" skuid="" minionly="false"/>
+	<setting type="system" name="font_scale" value="1" skuid="" minionly="false"/>
+	<setting type="global" name="wifi_p2p_device_name" value="onn 11 Core Tablet" skuid="" minionly="false"/>
+	<setting type="global" name="bluetooth_on" value="0" skuid="" minionly="false"/>
+	<setting type="secure" name="immersive_mode_confirmations" value="confirmed" skuid="" minionly="true"/>
+	<setting type="secure" name="emergency_gesture_enabled" value="0" skuid="" minionly="false"/>
+	<setting type="system" name="screen_brightness" value="69" skuid="" minionly="false"/>
+	<setting type="system" name="screen_brightness_float" value="0.26955533" skuid="" minionly="false"/>
+	<setting type="secure" name="read_mode_color_mode" value="3" skuid="" minionly="false"/>
+	<setting type="system" name="screen_brightness_mode" value="1" skuid="" minionly="false"/>
+</resources>

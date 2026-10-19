@@ -1,0 +1,11 @@
+#!/system/bin/sh
+echo "start!"
+
+openftm=`getprop vendor.meta.open_ftm`
+
+if [ "$openftm" = "true" ]
+then
+    am broadcast -a android.provider.Telephony.SECRET_CODE -d android_secret_code://7
+    exit
+fi
+

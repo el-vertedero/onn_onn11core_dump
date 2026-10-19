@@ -1,0 +1,39 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.system.brand=onn
+ro.product.system.device=onn11Core
+ro.product.system.manufacturer=onn
+ro.product.system.model=36018341
+ro.product.system.name=onn11Core
+ro.system.product.cpu.abilist=arm64-v8a
+ro.system.product.cpu.abilist32=
+ro.system.product.cpu.abilist64=arm64-v8a
+ro.system.build.date=Wed Aug 12 09:13:32 UTC 2026
+ro.system.build.date.utc=1786540660
+ro.system.build.fingerprint=onn/onn11Core/onn11Core:16/BP2A.250605.031.A3/1786540660:user/release-keys
+ro.system.build.id=BP2A.250605.031.A3
+ro.system.build.tags=release-keys
+ro.system.build.type=user
+ro.system.build.version.incremental=1786540660
+ro.system.build.version.release=16
+ro.system.build.version.release_or_codename=16
+ro.system.build.version.sdk=36
+ro.system.build.version.sdk_full=36.0
+
+####################################
+# from variable PRODUCT_SYSTEM_ETC_US_PROPERTIES
+####################################
+ro.tinno.build_product=US
+persist.sys.timezone=America/New_York
+persist.sys.locale=en-US
+ro.product.locale=en-US
+ro.build.version.base_os=onn/onn11Core/onn11Core:16/BP2A.250605.031.A3/1777011005:user/release-keys
+ro.product.manufacturer=onn
+ro.product.name=onn11Core
+ro.product.device=onn11Core
+ro.product.model=36018341
+ro.product.brand=onn
+ro.product.build.number=1786526014
+

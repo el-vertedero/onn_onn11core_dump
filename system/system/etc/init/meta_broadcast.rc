@@ -1,0 +1,11 @@
+
+on property:vendor.meta.open_ftm=true
+    stop meta_broadcast
+    start meta_broadcast
+
+service meta_broadcast /system/bin/meta_broadcast
+    class core
+    user root
+    group root system
+    disabled
+    oneshot
