@@ -1,0 +1,11 @@
+####################################
+# from generate-common-build-props
+# import tinno prop.
+import /system_ext/etc/${ro.boot.sku:-US}.prop
+####################################
+####################################
+# from variable PRODUCT_SYSTEM_EXT_PROPERTIES
+####################################
+ro.config.isolated_compilation_enabled=true
+# end of file
+

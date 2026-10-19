@@ -1,0 +1,4 @@
+# rkp_only settings
+on fs && property:ro.product.first_api_level=36
+    setprop remote_provisioning.tee.rkp_only 1
+    setprop remote_provisioning.strongbox.rkp_only 1

@@ -1,0 +1,11 @@
+service poweronlog /system_ext/bin/poweronlog.sh
+    class main
+    user root
+    group system cache
+    oneshot
+    disabled
+
+on property:init.svc.logd=running
+    mkdir /cache/poweron_log 0777 system system
+    mkdir /mnt/poweron_info/poweron_log 0770 root system
+    start poweronlog
