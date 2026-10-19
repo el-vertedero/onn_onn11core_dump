@@ -1,0 +1,7 @@
+####################################
+# from generate-common-build-props
+# import tinno prop.
+import /odm_dlkm/etc/${ro.boot.sku:-US}.prop
+####################################
+# end of file
+

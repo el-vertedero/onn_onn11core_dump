@@ -1,0 +1,14 @@
+# sys_T405A_mssi_64_64only_ww_armv82-user 16 BP2A.250605.031.A3 574 release-keys
+- manufacturer: onn
+- platform: common
+- codename: onn11Core
+- flavor: sys_T405A_mssi_64_64only_ww_armv82-user
+- release: 16
+- id: BP2A.250605.031.A3
+- incremental: 1786540660
+- tags: release-keys
+- fingerprint: onn/onn11Core/onn11Core:16/BP2A.250605.031.A3/1786540660:user/release-keys
+- is_ab: true
+- brand: onn
+- branch: sys_T405A_mssi_64_64only_ww_armv82-user-16-BP2A.250605.031.A3-574-release-keys
+- repo: onn_onn11core_dump

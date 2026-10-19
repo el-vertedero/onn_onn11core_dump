@@ -1,0 +1,11 @@
+product/app/Meet/Meet.apk.zst
+product/app/Gmail2/Gmail2.apk.zst
+product/app/TrichromeLibrary64/TrichromeLibrary64.apk.zst
+product/app/Maps/Maps.apk.zst
+product/app/Photos/Photos.apk.zst
+product/app/YouTube/YouTube.apk.zst
+product/priv-app/Messages/Messages.apk.zst
+product/priv-app/GmsCore/GmsCore.apk.zst
+vendor/etc/dts/dts-eagle.lic.zst
+vendor/etc/dts/dts-decoder.lic.zst
+system/system/app/GoogleHome/GoogleHome.apk.zst
